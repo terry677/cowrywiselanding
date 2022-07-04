@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texsoftware</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- google fonts -->
+
+
+</head>
+
+<body>
+    <section class="anouncement">
+        <p>Anouncement 🗣 </p>
+    </section>
+
+
+
+
+
+    <section class="hero-container">
+        <div class="container">
+            <header>
+                <a class="logo" href="/">
+                    Texsoftware</a>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Developer</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                </nav>
+                <div class="cta-access">
+                    <a class="login-btn" href="#">login</a>
+                    <a class="cta" href="#">Sign Up for Free</a>
+                </div>
+                <p class="menu cta">Menu</p>
+            </header>
+            <div class="overlay">
+                <a class="close">&times;</a>
+                <div class="overlay__content">
+                    <a href="#">Personal</a>
+                    <a href="#">Business</a>
+                    <a href="#">Developer</a>
+                    <a href="#">Learn</a>
+                    <a href="#">login</a>
+                    <a href="#">Sign Up for Free</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonials">
+                    <div class="image">
+                        <div class="rightSide-div">
+                            <div class="rightSide">
+
+                                <div class="testimonial-text">
+                                    <p>TexSavings makes saving really easy and interesting.<br> And the most fun part<br> is that i can invest my money in dollars. </p>
+                                    <div class="testimonial-name">
+                                        Mayorkun A
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="hero-text">
+                    <div class="description">
+                        <h1>Put your<br> money to work.</h1>
+                        <p>Build discipline, access financial tools and steadily grow your financies</p>
+                    </div>
+                    <div class="inputs">
+                        <input class="email" type="email" placeholder="Your email...">
+                        <input class="btn" type="button" value="Start investing">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+
+<script>
+    const doc = document;
+    const menuOpen = doc.querySelector(".menu");
+    const menuClose = doc.querySelector(".close");
+    const overlay = doc.querySelector(".overlay");
+
+    menuOpen.addEventListener("click", () => {
+        overlay.classList.add("overlay--active");
+        console.log(menuOpen); 
+    });
+
+    menuClose.addEventListener("click", () => {
+        overlay.classList.remove("overlay--active");
+        console.log(menuClose);
+    });
+</script>
+
+</html>
